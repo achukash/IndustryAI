@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Financing Optimization Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Green Financing Optimization Platform</h1>
+        <form id="projectForm">
+            <h2>General Project Details</h2>
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" required>
+
+            <label for="sectorIndustry">Sector/Industry:</label>
+            <input type="text" id="sectorIndustry" required>
+
+            <label for="projectLocation">Project Location:</label>
+            <input type="text" id="projectLocation" placeholder="Region, City, Country" required>
+
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" required>
+
+            <h2>Environmental Metrics</h2>
+            <label for="carbonEmissions">Baseline Carbon Emissions (tons/year):</label>
+            <input type="number" id="carbonEmissions" required>
+
+            <label for="projectedReductions">Projected Reductions (tons/year):</label>
+            <input type="number" id="projectedReductions" required>
+
+            <label for="energyUsageRenewable">Renewable Energy Usage (kWh):</label>
+            <input type="number" id="energyUsageRenewable" required>
+
+            <label for="energyUsageNonRenewable">Non-Renewable Energy Usage (kWh):</label>
+            <input type="number" id="energyUsageNonRenewable" required>
+
+            <h2>Social Metrics</h2>
+            <label for="jobCreation">Number of Jobs Created:</label>
+            <input type="number" id="jobCreation" required>
+
+            <h2>Governance Metrics</h2>
+            <label for="compliance">Compliance (Yes/No):</label>
+            <select id="compliance" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <h2>Financial Metrics</h2>
+            <label for="expectedROI">Expected ROI (%):</label>
+            <input type="number" id="expectedROI">
+
+            <h2>Supporting Documents</h2>
+            <label for="supportingDocuments">Upload Supporting Documents:</label>
+            <input type="file" id="supportingDocuments" multiple>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
